@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(50% at bottom right);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    position: relative;
+    max-width: 130px;
+}
+
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+
+header .navegation  li{
+    list-style: none;
+}
+
+header .navegation li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+header .navegation li a:hover{
+    color: #e51e2a;
+    transition: .2s ease-in-out;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.content .text h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
+.content .text h2 span{
+    font-size: 3.5em;
+    color: #e51e2a;
+}
+
+.content .text p{
+    color: #fff;
+}
+
+.content .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #e51e2a;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.content .text a:hover{
+    transform: translateY(-10px);
+}
+
+.boxImg{
+    position: absolute;
+    right: -90px;
+    bottom: -40px;
+}
+
+.boxImg img{
+    width: 150px;
+}
+
+.boxImg .img1{
+    transform: rotate(-15deg)
+}
+
+.boxImg .img2{
+    transform: rotate(5deg)
+}
+
+.boxImg .img3{
+    transform: rotate(15deg)
+}
+
+.boxImg .img4{
+    transform: rotate(-15deg)
+}
+
+#products{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#products .text{
+    display: flex;
+    justify-content: center;
+    color: #1E1E1E;
+    padding: 60px;
+}
+
+.carrossel-products {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+
+.product {
+    width: 20%;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #1212121c;
+    z-index: 1;
+    display: grid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 100px #1212121c;
+}
+
+.product p{
+    padding: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 100px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.product button{
+    width: 10em;
+    border-color: #fff;
+    padding: 10px;
+    justify-self: center;
+    background: #e51e2a;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product button:hover{
+    background: #c40a16;
+}
+
+
+#contacts{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #121212;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-media {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-contact {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 100px;
+}
+
+.icons-contact li a{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 1px 1px 10px #ffffff59;
+}
+
+.icons-contact #facebook:hover{
+    background-color: #4267B2;
+}
+
+.icons-contact #instagram:hover{
+    background: linear-gradient(45deg, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737);
+}
+
+.icons-contact #twitter:hover{
+    background-color: #1DA1F2;
+
+}
+
+#contacts .text{
+    width: 50%;
+    margin-right: 20px;
+    align-self: center;
+}
+
+#contacts .text h2{
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.7em;
+    font-weight: 700;
+}
+
+#contacts .text h2 span{
+    color: #e51e2a;
+    text-shadow: 1px 1px 1px #c40a16;
+    font-size: 2.5em;
+}
+
+footer{
+    width: 100%;
+    min-height: 20vh;
+    background-color: #c40a16;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+footer img{
+    max-width: 100px;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 400;
+}
